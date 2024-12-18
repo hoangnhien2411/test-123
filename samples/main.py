@@ -10,6 +10,9 @@ OUTPUT_FILE = "output2"
 if not os.path.exists(OUTPUT_FILE):
     os.makedirs(OUTPUT_FILE)
 
+IN_FILE = "input"
+if not os.path.exists(IN_FILE):
+    os.makedirs(IN_FILE)
 
 if len(audio) > 0:
     # To play audio in frontend:
