@@ -49,7 +49,6 @@ referencing==0.35.1
 requests==2.32.3
 rich==13.9.4
 rpds-py==0.22.3
-rtclient @ file:///workspaces/test-123/samples/rtclient-0.5.1-py3-none-any.whl#sha256=8f50b3fd02de6329e81be85b56511714fd68f349e94fa099b2db0376096632aa
 scipy==1.14.1
 six==1.17.0
 smmap==5.0.1

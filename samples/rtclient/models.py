@@ -1,3 +1,4 @@
+
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
@@ -17,7 +18,7 @@ from rtclient.util.model_helpers import ModelWithDefaults
 Voice = Literal["alloy", "ash", "ballad", "coral", "echo", "sage", "shimmer", "verse"]
 AudioFormat = Literal["pcm16", "g711-ulaw", "g711-alaw"]
 Modality = Literal["text", "audio"]
-global instructions
+
 
 class NoTurnDetection(ModelWithDefaults):
     type: Literal["none"] = "none"
@@ -59,11 +60,10 @@ MaxTokensType = Union[int, Literal["inf"]]
 
 
 class SessionUpdateParams(BaseModel):
-   
     model: Optional[str] = None
     modalities: Optional[set[Modality]] = None
     voice: Optional[Voice] = None
-    instructions: Optional[str] = instructions
+    instructions: Optional[str] = None
     input_audio_format: Optional[AudioFormat] = None
     output_audio_format: Optional[AudioFormat] = None
     input_audio_transcription: Optional[InputAudioTranscription] = None
@@ -219,7 +219,7 @@ class ResponseCreateParams(BaseModel):
     cancel_previous: bool = True
     append_input_items: Optional[list[Item]] = None
     input_items: Optional[list[Item]] = None
-    instructions: Optional[str] = instructions
+    instructions: Optional[str] = None
     modalities: Optional[set[Modality]] = None
     voice: Optional[Voice] = None
     temperature: Optional[Temperature] = None
@@ -263,7 +263,7 @@ class Session(BaseModel):
     id: str
     model: str
     modalities: set[Modality]
-    instructions: instructions
+    instructions: str
     voice: Voice
     input_audio_format: AudioFormat
     output_audio_format: AudioFormat

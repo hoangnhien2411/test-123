@@ -166,8 +166,7 @@ async def run(client: RTClient, audio_file_path: str, out_dir: str):
     You are an AI assistant. You are a smart, professional, and helpful virtual assistant. Your task is to assist the user
     Previous conversation context:
     {transcript_content}
-
-    Respond in a detailed, accurate, and easy-to-understand manner. If you lack sufficient information, ask the user for clarification or additional details.
+    Respond in a detailed, accurate, and easy-to-understand manner. If you lack sufficient information, ask the user for clarification or additional details.Anf return answer in question language
     """
     #print(instructions)
     # Cấu hình session với client
