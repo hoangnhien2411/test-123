@@ -68,7 +68,7 @@ regex==2024.11.6
 requests==2.32.3
 rich==13.9.4
 rpds-py==0.22.3
-rtclient @ file:///mnt/d/FPT_work/bot_mc/openai_source/python/samples/rtclient-0.5.1-py3-none-any.whl#sha256=8f50b3fd02de6329e81be85b56511714fd68f349e94fa099b2db0376096632aa
+rtclient
 ruff==0.8.3
 safehttpx==0.1.6
 safetensors==0.4.5
