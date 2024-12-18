@@ -68,7 +68,7 @@ regex
 requests
 rich
 rpds-py
-rtclient @ file:///mnt/d/FPT_work/bot_mc/openai_source/python/samples/rtclient-0.5.1-py3-none-any.whl#sha256=8f50b3fd02de6329e81be85b56511714fd68f349e94fa099b2db0376096632aa
+rtclient
 ruff
 safehttpx
 safetensors
